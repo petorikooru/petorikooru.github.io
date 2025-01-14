@@ -1,49 +1,56 @@
 * {
   font-family : "Cantarell", sans-serif;
-  color : #D5D9DD;
+  color : var(--color-foreground);
   box-sizing  : border-box;
+  transition: var(--transition);
   margin: 0;
 }
 
-.header {
-  background: #122B41;
+:root {
+  /* Colors */
+  --color-background: #122B41;
+  --color-foreground: #D5D9DD;
+  --color-secondary : #001B33;
+  --color-tertiary  : #000D1A;
 
-  padding-top   : 0px;
-  padding-bottom: 0px;
-  padding-left  : 10px;
-  padding-right : 10px;
+  /* UI Design */
+  --corner-radius   : 20px;
+  --default-padding : 20px;
+
+  /* Transition */
+  --transition      : 0.2s ease;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
+.header {
+  background: var(--color-background);
+  position: sticky;
+  top     : 0;
+  width   : 100%;
+  z-index : 1;
 }
 
 .title {
-  font-size   : 20px;
-  text-decoration : none;
-  text-align      : center;
-  color : white;
+  font-size : 20px;
+  text-align    : center;
+  color         : white;
 
-  float: left;
-  display: block;
-  padding: 20px 20px;
+  float   : left;
+  padding : 18px 20px;
 }
 
 .navbar {
-  display: flex;
-  background-color: #122B41;
+  background-color: var(--color-background);
+  display         : flex;
+  list-style-type : none;
 }
 
 .navbar a {
+  color : white;
+  
   text-decoration : none;
   text-align      : center;
-  color : white;
 
-  float: right;
+  float   : right;
   display : block;
   padding : 20px 20px;
 }
@@ -54,54 +61,32 @@
   margin: 0px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+  align-items: stretch;
+}
+
 @media screen and (max-width : 700px) {
   .row {   
     flex-direction: column;
   }
   .navbar {
     justify-content: center; 
+    padding-left: 0;
   }
 }
 
-.details {
-  background-color: #001B33;
-  font-size : 16px;
-  flex: 70%;
+.sidebar {
+  background-color: var(--color-tertiary); 
 
-  padding: 20px;
-
-}
-
-.projects {
-  background-color: #122B41;
-  border-radius: 20px;
-
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  margin-bottom: 20px;
-
-  line-height: 1.5; 
-}
-
-.projects:hover {
-  background: #31475A;
-}
-
-.main {
-  background-color: #000D1A; 
-  text-decoration: none;
   flex: 30%;
-
+  position: sticky;
   padding: 40px;
-  height: 100vh;
   line-height: 1.5;
-}
-
-.main-contents {
-  padding-top : 20px;
 }
 
 .img {
@@ -113,3 +98,61 @@
   margin-right: auto;
   margin-bottom: 40px;
 }
+
+.contacts {
+  text-decoration: none;
+  padding-top : 20px;
+}
+
+.details {
+  background-color: var(--color-secondary);
+  font-size : 16px;
+  flex: 70%;
+
+  height: 100%;
+  padding: 20px;
+}
+
+.about-me {
+  font-size: 18px;
+  line-height: 1.5;
+
+  transition: var(--transition);
+}
+
+.projects {
+  background-color: var(--color-background);
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5; 
+
+  transition: var(--transition);
+}
+
+.projects:hover {
+  background: #31475A;
+}
+
+.gallery {
+  font-size: 18px;
+  line-height: 1.5;
+
+  transition: var(--transition);
+}
+
+.arimuranation {
+  font-size: 18px;
+  line-height: 1.5;
+
+  width: 100%;
+
+  transition: var(--transition);
+}
+

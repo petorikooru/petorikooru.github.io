@@ -4,27 +4,27 @@
 <head>
   <title>Personal Website</title>
   <link rel="icon" type="image/x-icon" href="./src/assets/icon.jpeg">
+  <link rel="stylesheet" href="./src/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
   <div class="header">
     <div class="row">
       <div class="title">
-        <p> petorikooru </p> 
+        <p>petorikooru</p> 
       </div>
-      <div class="navbar">
-        <a href="#"> About me </a>
-        <a href="#"> Projects </a>
-        <a href="#"> Gallery </a>
-        <a href="#"> Arimuranation </a>
-      </div>
+      <ul class="navbar">
+        <li><a href="#">About me</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#Arimuranation">Arimuranation</a></li>
+      </ul>
     </div>
   </div>
 <div class="row">
-  <div class="main">
+  <div class="sidebar">
     <img src="./src/assets/icon.jpeg" class="img">
 
     <p>
@@ -32,10 +32,12 @@
       <h4> demetori0 | petorikooru  </h4>
     </p>
     
-    <div class="main-contents">
+    <div class="contacts">
       <h2> Accounts :</h2>
       <h4> 
-        Instagram: <a href="https://instagram.com/demetori0">@demetori0</a> <br>
+        Email : <a href="mailto:demetori0@proton.me">demetori0@proton.me</a><br>
+        Github : <a href="https://github.com/petorikooru">petorikooru</a></br>
+        Instagram: <a href="https://instagram.com/demetori0">@demetori0</a><br>
         Linkedin: TBA <br>
       </h4>
     </div>
@@ -43,18 +45,57 @@
   </div>
 
   <div class="details">
-    <h1 style="text-align: center; padding-bottom: 20px;"> Welcome to my personal account! </h1>
-    <h1 style="padding-bottom: 20px;"> Projects: </h1>
-    <div class="projects"> 
-      <h2> Video to Image Converter </h2>
-      <p style="padding-bottom: 20px;"> <a href="https://github.com/petorikooru/v2i_converter"> https://github.com/petorikooru/v2i_converter </a> </p>
-      <p> Yet another video to image converter created in python! Say goodbye to screenshot spamming the video! </p>
-    </div>
-    <div class="projects"> 
-      <h2> Game Center </h2>
-      <p style="padding-bottom: 20px;"> <a href="https://github.com/petorikooru/the-game"> https://github.com/petorikooru/the-game </a> </p>
-      <p> Who loves gambling? We do and here we are in the game center! A simple game center program written in C. </p>
-    </div>
+    <h1 style="text-align: center; padding-bottom: 20px;"> (´･ω･`) </h1>
+    
+    <!-- About me -->
+    <section id=About-me">
+      <a href="#About-me"></a>
+      <h1> About me: </h1>
+      <div class="about-me">
+        <h4>I am just a regular guy wandering around internet.</h4>
+        <ul>
+          <li><b>Major :</b> Electrical Engineering </li>
+          <li><b>Hobby :</b> Programming, Tinkering with electronics, etc. </li>
+          <li><b>Interest :</b> History, Science, Right to Repair, Linux, and many more! </li>
+          <li><b>Fun :</b> Anime, BA, VN, YGO</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="Projects">
+      <a href="#Projects"></a>
+      <h1 style="padding: 20px 0;"> Projects: </h1>
+      <button class="projects"> 
+        <h2> Video to Image Converter </h2>
+        <p style="padding-bottom: 20px;"> <a href="https://github.com/petorikooru/v2i_converter"> https://github.com/petorikooru/v2i_converter </a> </p>
+        <p> Yet another video to image converter written in Python! Say goodbye to screenshot spamming the video! </p>
+      </button>
+      <button class="projects"> 
+        <h2> Game Center </h2>
+        <p style="padding-bottom: 20px;"> <a href="https://github.com/petorikooru/the-game"> https://github.com/petorikooru/the-game </a> </p>
+        <p> Who loves gambling? We do and here we are in the game center! A simple game center program written in C. </p>
+      </button>
+    </section>
+
+    <!-- Gallery -->
+    <section id="Gallery">
+      <a href="#Gallery"></a>
+      <h1>Gallery:</h1>
+      <div class="gallery">
+        <p> None yet </p>
+      </div>
+    </section>
+
+    <!-- Arimuranation -->
+    <section id="Arimuranation">
+      <a href="#Arimuranation"></a>
+      <h1 style="padding: 20px 0 20px 0;">Bonus</h1>
+      <div class="arimuranation">
+        <img src="./src/assets/air_fryer.jpeg" class="arimuranation">
+      </div>
+    </section>
+    
   </div>
 </div>
 
