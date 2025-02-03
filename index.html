@@ -3,100 +3,111 @@
 
 <head>
   <title>Personal Website</title>
-  <link rel="icon" type="image/x-icon" href="./src/assets/icon.jpeg">
+  <link rel="icon" type="image/x-icon" href="./src/assets/pfp.jpg">
   <link rel="stylesheet" href="./src/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="device-width, initial-scale=1.0">
 </head>
 
 <body>
+  <!-- Headerbar -->
   <div class="header">
     <div class="row">
       <div class="title">
-        <p>petorikooru</p> 
+        <b><p>null;after</p></b>
       </div>
       <ul class="navbar">
-        <li><a href="#">About me</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Gallery">Gallery</a></li>
-        <li><a href="#Arimuranation">Arimuranation</a></li>
+        <li><b><a href="./index.html">About</b></a></li>
+        <li><b><a href="./index.html#Projects">Projects</b></a></li>
+        <li><b><a href="./src/resources.html">Resources</b></a></li>
+        <li><b><a href="./src/blog.html"">Blog</b></a></li>
       </ul>
     </div>
   </div>
-<div class="row">
+  
+<div class="wrapper">
+
+  <!-- Sidebar -->
   <div class="sidebar">
-    <img src="./src/assets/icon.jpeg" class="img">
-
-    <p>
+    <a href="https://www.pixiv.net/artworks/126374732">
+      <img src="./src/assets/pfp.jpg" class="pfp">
+    </a>
+    <div class="name">
       <h1> Muhammad Raditya Dwi Putra </h1>
-      <h4> demetori0 | petorikooru  </h4>
-    </p>
-    
-    <div class="contacts">
-      <h2> Accounts :</h2>
-      <h4> 
-        Email : <a href="mailto:demetori0@proton.me">demetori0@proton.me</a><br>
-        Github : <a href="https://github.com/petorikooru">petorikooru</a></br>
-        Instagram: <a href="https://instagram.com/demetori0">@demetori0</a><br>
-        Linkedin: TBA <br>
-      </h4>
+      <h4> demetori0 | petorikooru </h4>
     </div>
-
+    <div class="contacts">
+      <a href="mailto:demetori0@proton.me"><button class="socials">
+        <img src="./src/assets/socials/Mail.png" class="socials_icon">
+      </a></button>
+      <a href="https://github.com/petorikooru"><button class="socials">
+        <img src="./src/assets/socials/Github.png" class="socials_icon">
+      </a></button>
+      <a href="https://discord.com/users/1266379376165912596"><button class="socials">
+        <img src="./src/assets/socials/Discord.png" class="socials_icon" style="height:20px;">
+      </a></button>
+      <a href="https://line.me/ti/p/5H_cywUhfn"><button class="socials">
+        <img src="./src/assets/socials/Line.png" class="socials_icon">
+      </a></button>
+      <a href="#TBA"><button class="socials">
+        <img src="./src/assets/socials/LinkedIn.png" class="socials_icon">
+      </a></button>
+    </div>
   </div>
 
-  <div class="details">
-    <h1 style="text-align: center; padding-bottom: 20px;"> (´･ω･`) </h1>
-    
-    <!-- About me -->
-    <section id=About-me">
-      <a href="#About-me"></a>
-      <h1> About me: </h1>
-      <div class="about-me">
-        <h4>I am just a regular guy wandering around internet.</h4>
-        <ul>
-          <li><b>Major :</b> Electrical Engineering </li>
-          <li><b>Hobby :</b> Programming, Tinkering with electronics, etc. </li>
-          <li><b>Interest :</b> History, Science, Right to Repair, Linux, and many more! </li>
-          <li><b>Fun :</b> Anime, BA, VN, YGO</li>
-        </ul>
-      </div>
-    </section>
+  <!-- The main content -->
+  <div class="main_about">
+    <div class="main_contents">
+      <!-- Fun -->
+      <h1 style="text-align: center; padding-bottom: 20px;"> (´･ω･`) </h1>
+      <!-- About me -->
+      <section id=About-me">
+        <a href="#About-me"></a>
+        <h1> About me: </h1>
+        <div class="paragraph">
+          <h4>null.</h4>
+          <ul>
+            <li><pre style="tab-size: 4;"><b>Major      :</b> Electrical Engineering <pre></li>
+            <li><pre style="tab-size: 4;"><b>Hobby    :</b> Programming, Tinkering with Laptop and Linux <pre></li>
+            <li><pre style="tab-size: 4;"><b>Interest :</b> History, Science, Tech, R2R, and many more! <pre></li>
+            <li><pre style="tab-size: 4;"><b>Fun          :</b> Anime, BA, VN, YGO <pre></li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Projects -->
-    <section id="Projects">
-      <a href="#Projects"></a>
-      <h1 style="padding: 20px 0;"> Projects: </h1>
-      <button class="projects"> 
-        <h2> Video to Image Converter </h2>
-        <p style="padding-bottom: 20px;"> <a href="https://github.com/petorikooru/v2i_converter"> https://github.com/petorikooru/v2i_converter </a> </p>
-        <p> Yet another video to image converter written in Python! Say goodbye to screenshot spamming the video! </p>
-      </button>
-      <button class="projects"> 
-        <h2> Game Center </h2>
-        <p style="padding-bottom: 20px;"> <a href="https://github.com/petorikooru/the-game"> https://github.com/petorikooru/the-game </a> </p>
-        <p> Who loves gambling? We do and here we are in the game center! A simple game center program written in C. </p>
-      </button>
-    </section>
-
-    <!-- Gallery -->
-    <section id="Gallery">
-      <a href="#Gallery"></a>
-      <h1>Gallery:</h1>
-      <div class="gallery">
-        <p> None yet </p>
-      </div>
-    </section>
-
-    <!-- Arimuranation -->
-    <section id="Arimuranation">
-      <a href="#Arimuranation"></a>
-      <h1 style="padding: 20px 0 20px 0;">Bonus</h1>
-      <div class="arimuranation">
-        <img src="./src/assets/air_fryer.jpeg" class="arimuranation">
-      </div>
-    </section>
-    
+      <!-- Projects -->
+      <section id="Projects">
+        <a href="#Projects"></a>
+        <h1 style="padding: 20px 0;"> Projects: </h1>
+        
+        <a href="https://github.com/petorikooru/v2i_converter">
+          <button class="projects"> 
+            <h2> Video to Image Converter </h2>
+            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/v2i_converter</p>
+            <p> Yet another video to image converter written in Python! Say goodbye to screenshot spamming the video! </p>
+          </button>
+        </a>
+        
+        <a href="https://github.com/petorikooru/the-game">
+          <button class="projects"> 
+            <h2> Game Center </h2>
+            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/the-game</p>
+            <p> Who loves gambling? We do and here we are in the game center! A simple game center program written in C. </p>
+          </button>
+        </a>
+        
+        <a href="https://github.com/petorikooru/FishDash">
+          <button class="projects"> 
+            <h2> FishDash </h2>
+            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/FishDash</p>
+            <p> Soon to be a fisheye lens camera viewer </p>
+          </button>
+        </a>
+        
+      </section>
+    </div>
   </div>
+  
 </div>
 
 </body>
