@@ -34,7 +34,7 @@ body {
 /* Headerbar */
 .header {
   background: var(--color-background);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   
   overflow  : hidden;
   position  : sticky;
@@ -84,9 +84,7 @@ body {
 .sidebar {
   background-color: var(--color-background); 
 
-  height          : calc(100%-var(--default-padding));
   width           : var(--sidebar-width);
- 
   position        : fixed;
   left            : 0;
 
@@ -104,13 +102,22 @@ body {
 
 .pfp {
   display       : block;
+  
+  border        : 6px solid transparent;
   border-radius : 50%;
-  width         : 240px;
+  background    : 
+    linear-gradient(to right, white, white), 
+    linear-gradient(to right, #EDBF76 , #B8ACAC); 
+  background-clip   : padding-box, border-box;
+  background-origin : padding-box, border-box;
+
+  
+  width         : 280px;
 
   margin-left   : auto;
   margin-right  : auto;
   margin-top    : 20px;
-  margin-bottom : 40px;
+  margin-bottom : 20px;
 }
 
 .contacts {
@@ -318,10 +325,14 @@ body {
 
 @media screen and (max-width : 405px) {
   .subjects {
-    font-size       : 14px;
+    font-size: 14px;
   
     width    : 140px;
     height   : 140px;
+  }
+  
+  .pfp {
+    width    : 240px;
   }
   
   .subjects_icon {
