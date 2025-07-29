@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'comic_mononormal';
+    src: url('./assets/comicmono-webfont.woff2') format('woff2'),
+         url('./assets/comicmono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     font-family: "Comic Mono", sans-serif;
     color: var(--color-foreground);

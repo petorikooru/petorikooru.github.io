@@ -1,3 +1,3 @@
 Credits :
 - https://coolicons.cool/
-- Font-Awesome
+- Comic Mono Font
