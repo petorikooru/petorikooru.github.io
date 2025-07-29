@@ -1,13 +1,15 @@
 @font-face {
-    font-family: 'comic_mononormal';
-    src: url('./assets/comicmono-webfont.woff2') format('woff2'),
-         url('./assets/comicmono-webfont.woff') format('woff');
+    font-family: "comic_mononormal";
+    src:
+        url("../assets/comicmono-webfont.woff2") format("woff2"),
+        url("../assets/comicmono-webfont.woff") format("woff"),
+        url("../assets/ComicMono.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: "Comic Mono", sans-serif;
+    font-family: "comic_mononormal", sans-serif;
     color: var(--color-foreground);
 
     box-sizing: border-box;
