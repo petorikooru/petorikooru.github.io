@@ -42,7 +42,6 @@ body {
     background-image: url("/assets/bg.png");
 }
 
-/* Headerbar */
 .header {
     background: var(--color-background);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -85,31 +84,34 @@ body {
     margin: 0px;
 }
 
-/* The main things */
 .wrapper {
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
     min-height: 100vh;
+    padding: 40px 20px;
+    gap: 30px;
 }
 
-/* Sidebar */
 .sidebar {
     background-color: var(--color-background);
-
     width: var(--sidebar-width);
-    position: fixed;
-    left: 0;
+    flex-shrink: 0;
+
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    align-self: flex-start;
 
     padding: var(--default-padding);
-    margin-top: calc(8 * var(--default-margin));
-    margin-left: var(--default-padding);
-    margin-right: var(--default-padding);
+    margin-top: 0;
     border-radius: var(--corner-radius);
 
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
     line-height: 1.5;
-    z-index: 0;
-}
+    max-height: calc(100vh - 100px);
+``}
 
 .pfp {
     display: block;
@@ -181,12 +183,9 @@ body {
 }
 
 .main_about {
-    background-color: var(--color-secondary);
-
-    padding-top: var(--default-padding);
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: calc(var(--sidebar-width) + var(--default-padding));
+    flex: 1;
+    max-width: 900px;
+    padding-top: 30px;
 }
 
 .main_contents {
@@ -285,6 +284,9 @@ body {
 @media screen and (max-width: 920px) {
     .wrapper {
         flex-direction: column;
+        align-items: stretch;
+        padding: 20px 10px;
+        gap: 20px;
     }
 
     .title {
@@ -298,17 +300,17 @@ body {
     }
 
     .sidebar {
-        position: relative;
-        height: auto;
+        position: static;
+        top: auto;
+        transform: none;
+        align-self: stretch;
         width: auto;
-
+        max-height: none;
         margin-top: var(--default-margin);
     }
 
     .main_about {
-        margin-right: 0;
-        margin-left: 0;
-        width: auto;
+        padding-top: var(--default-padding);
     }
 
     .main {
