@@ -369,7 +369,7 @@ section { margin-bottom: 50px; }
 
     background: rgba(20, 24, 50, 0.80);
     border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 18px;
+    border-radius: 10px;
 
     width: min(900px, 92vw);
     max-height: 85vh;
@@ -507,23 +507,16 @@ section { margin-bottom: 50px; }
         transform: none;
     }
 
-    .pfp { width: 180px; }
-
     .resources {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 600px) {
-    .pfp { width: 150px; }
-    
+@media screen and (max-width: 620px) {
     .lab-item {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .lab-role { margin-top: 4px; font-size: 14px; }
-    .resources {
-        grid-template-columns: 1fr;
-    }
 }
