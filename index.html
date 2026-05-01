@@ -2,146 +2,294 @@
 <html lang="en">
 
 <head>
-    <title>Personal Website</title>
+    <title>Petorikooru</title>
     <link rel="icon" type="image/x-icon" href="./assets/pfp.png">
     <link rel="stylesheet" href="./src/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <!-- Headerbar -->
-    <div class="header">
-        <div class="row">
-            <div class="title">
-                <b>
-                    <p>demetori_null</p>
-                </b>
-            </div>
-            <ul class="navbar">
-                <li><b><a href="./index.html">About</b></a></li>
-                <li><b><a href="./index.html#Projects">Projects</b></a></li>
-                <li><b><a href="./resources.html">Resources</b></a></li>
-            </ul>
-        </div>
+    <div class="night-bg">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
     </div>
 
     <div class="wrapper">
-
         <!-- Sidebar -->
         <div class="sidebar">
             <a href="https://www.pixiv.net/artworks/122193138">
-                <img src="./assets/pfp.png" class="pfp">
+                <img src="./assets/pfp.png" class="pfp" alt="Profile Picture">
             </a>
             <div class="name">
                 <h1> demetori0 </h1>
                 <h4> Muhammad Raditya Dwi Putra</h4>
             </div>
             <div class="contacts">
-                <a href="mailto:demetori0@proton.me"><button class="socials">
-                        <img src="./assets/socials/Mail.png" class="socials_icon">
-                </a></button>
-                <a href="https://github.com/petorikooru"><button class="socials">
-                        <img src="./assets/socials/Github.png" class="socials_icon">
-                </a></button>
-                <a href="https://discord.com/users/1266379376165912596"><button class="socials">
-                        <img src="./assets/socials/Discord.png" class="socials_icon" style="height:20px;">
-                </a></button>
-                <a href="#TBA"><button class="socials">
-                        <img src="./assets/socials/LinkedIn.png" class="socials_icon">
-                </a></button>
+                <a href="https://ptrk.moe" class="socials">
+                     
+                </a>
+                <a href="mailto:demetori0@proton.me" class="socials">
+                    <img src="./assets/socials/Mail.png" class="socials_icon" alt="Email">
+                </a>
+                <a href="https://github.com/petorikooru" class="socials">
+                    <img src="./assets/socials/Github.png" class="socials_icon" alt="GitHub">
+                </a>
+                <a href="https://discord.com/users/1266379376165912596" class="socials">
+                    <img src="./assets/socials/Discord.png" class="socials_icon" style="height:20px;" alt="Discord">
+                </a>
+            </div>
+
+            <br>
+            <div class="name">
+              Usefull Stuff: 
+            </div>
+            <div class="usefull_link">
+                <a href="https://convert.to.it" class="link-btn">
+                    Converter
+                </a>
+                <a href="https://annas-archive.li/" class="link-btn">
+                    Library
+                </a>
+                <a href="https://sci-bot.ru" class="link-btn">
+                    Research
+                </a>
+                <a href="https://ripped.guide" class="link-btn">
+                    Torrent
+                </a>
+            </div>
+            <div class="usefull_link_single" style="margin-top: 10px;">
+                <label for="resources-toggle" class="link-btn">
+                    The Resources
+                </label>
             </div>
         </div>
+
 
         <!-- The main content -->
         <div class="main_about">
             <div class="main_contents">
                 <!-- Fun -->
-                <h1 style="text-align: center; padding-bottom: 20px;"> (´･ω･`) </h1>
+                <h1 style="text-align: center; padding-bottom: 20px; font-weight: normal;"> (´･ω･`) </h1>
+                
                 <!-- About me -->
-                <section id=About-me">
-                    <a href="#About-me"></a>
+                <section id="About-me">
                     <h1> About me: </h1>
                     <div class="paragraph">
-                        <p> Strugling EE student. Aspired to be low-level/hardware engineer. Right to Repair enthusiast.
-                        </p>
-                        <p> All software and hardware should be free (libre) and open source tbh. </p>
+                        <p> Struggling EE student. Aspired to be low-level/hardware engineer. Right to Repair enthusiast. </p>
+                        <p> All software and hardware should be libre. </p>
                         <br>
-                        <p> Currently affiliated laboratory: </p>
-                        <p> |> LumiaTech Innovation : [Software Team]</p>
-                        <p> |> Daskom Laboratory : [Assignment Task Comittee]</p>
-                        <p> |> Intelligent Railway System (IRSE) : [Software Team]</p>
+                        <p style="opacity: 0.8; font-size: 0.9em; margin-bottom: 10px;">Currently affiliated laboratory or stuff:</p>
+                        <div class="lab-list">
+                            <div class="lab-item">
+                                <span class="lab-name">LumiaTech Innovation</span>
+                                <span class="lab-role">Head of Software</span>
+                            </div>
+                            <div class="lab-item">
+                                <span class="lab-name">Intelligent Railway System</span>
+                                <span class="lab-role">Software Team</span>
+                            </div>
+                            <div class="lab-item">
+                                <span class="lab-name">Daskom Laboratory</span>
+                                <span class="lab-role">ATC & WebDev?</span>
+                            </div>
+                            <div class="lab-item">
+                                <span class="lab-name">Tentor 115 (KMTE)</span>
+                                <span class="lab-role">Teaching Assistant</span>
+                            </div>
+                            <div class="lab-item">
+                                <span class="lab-name">IoT Practicum Laboratory</span>
+                                <span class="lab-role">?</span>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <!-- Projects -->
                 <section id="Projects">
-                    <a href="#Projects"></a>
-                    <h1 style="padding: 20px 0;"> Projects: </h1>
+                    <h1 class="section-title">Projects</h1>
 
-                    <a href="https://github.com/petorikooru/Malkuth">
-                        <div class="projects">
-                            <h2> [Embedded] Malkuth </h2>
-                            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/Malkuth</p>
-                            <p> Yet another ESP32-S3 Based Audio Player (a bit more focus on FLAC) </p>
-                        </div>
-                    </a>
+                    <div class="projects-grid">
 
-                    <a href="https://github.com/petorikooru/KarawangiSejahtera">
-                        <div class="projects">
-                            <h2> [Web] KarawangiSejahtera </h2>
-                            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/KarawangiSejahtera</p>
-                            <p> A welfare website designed for the village of Karawangi (Daskom Acadmey 2025 assignment)
-                            </p>
-                        </div>
-                    </a>
+                        <a href="https://github.com/petorikooru/Daskom-Anomaly-Detector " class="project-card">
+                            <h2> Daskom Anomaly Tracker</h2>
+                            <span class="project-link">petorikooru/Daskom-Anomaly-Detector</span>
+                            <p>Find the anomalies within the sea of grades</p>
+                        </a>
 
-                    <a href="https://github.com/petorikooru/MasakYo">
-                        <div class="projects">
-                            <h2> [Web] MasakYo </h2>
-                            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/MasakYo</p>
-                            <p> Food and Recipe website project for Daskom Academy 2025 assignment </p>
-                        </div>
-                    </a>
+                        <a href="https://github.com/Daskom-Lab/daskomrec26" class="project-card">
+                            <h2> DLOR 2026</h2>
+                            <span class="project-link">Daskom-Lab/daskomrec26</span>
+                            <p>Daskom Laboratory Open Recruitment Website (Frontend Side)</p>
+                        </a>
 
-                    <a href="https://github.com/petorikooru/Lyrica">
-                        <div class="projects">
-                            <h2> [C] lyrica </h2>
-                            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/lyrica</p>
-                            <p> Lyrics parser + audio player (.lrc + .flac) | Ideally i want it to be terminal music
-                                player (soon ig...) </p>
-                        </div>
-                    </a>
+                        <a href="https://github.com/petorikooru/Malkuth" class="project-card">
+                            <h2> Malkuth</h2>
+                            <span class="project-link">petorikooru/Malkuth</span>
+                            <p>ESP32-S3 based audio player focused on FLAC</p>
+                        </a>
 
-                    <a href="https://github.com/petorikooru/v2i-converter">
-                        <div class="projects">
-                            <h2> [Python] Video to Image Converter </h2>
-                            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/v2i-converter</p>
-                            <p> Yet another video to image converter written in Python! Say goodbye to screenshot
-                                spamming the video! </p>
-                        </div>
-                    </a>
+                        <a href="https://github.com/petorikooru/KarawangiSejahtera" class="project-card">
+                            <h2> KarawangiSejahtera</h2>
+                            <span class="project-link">petorikooru/KarawangiSejahtera</span>
+                            <p>Village welfare website for Daskom Academy 2025</p>
+                        </a>
 
-                    <a href="https://github.com/petorikooru/the-game">
-                        <div class="projects">
-                            <h2> [C] Game Center </h2>
-                            <p style="padding-bottom: 20px;"> https://github.com/petorikooru/the-game</p>
-                            <p> Who loves gambling? We do and here we are in the game center! A simple game center
-                                program written in C. </p>
-                        </div>
-                    </a>
+                        <a href="https://github.com/petorikooru/MasakYo" class="project-card">
+                            <h2> MasakYo</h2>
+                            <span class="project-link">petorikooru/MasakYo</span>
+                            <p>Food & recipe website for Daskom Academy 2025</p>
+                        </a>
 
+                        <a href="https://github.com/petorikooru/Lyrica" class="project-card">
+                            <h2> Lyrica</h2>
+                            <span class="project-link">petorikooru/lyrica</span>
+                            <p>Lyrics parser + terminal music player (WIP)</p>
+                        </a>
+
+                        <a href="https://github.com/petorikooru/v2i-converter" class="project-card">
+                            <h2> V2I Converter</h2>
+                            <span class="project-link">petorikooru/v2i-converter</span>
+                            <p>Convert video into images without manual screenshots</p>
+                        </a>
+
+                        <a href="https://github.com/petorikooru/the-game" class="project-card">
+                            <h2>  Game Center</h2>
+                            <span class="project-link">petorikooru/the-game</span>
+                            <p>Simple game center written in C</p>
+                        </a>
+                    </div>
                 </section>
 
-                <p style="text-align: right; font-size: 18px;"><i> "An idiot admires complexity. A genius admires
-                        simplicity." </i></p>
-                <p style="text-align: right; font-size: 18px; padding-bottom: 20px;"> - Terry A. Davis, TempleOS
-                    creator.</p>
+                <div class="quote-section" style="margin-top: 60px;">
+                    <p style="text-align: right; font-size: 16px; opacity: 0.8;"><i> "An idiot admires complexity. A genius admires simplicity." </i></p>
+                    <p style="text-align: right; font-size: 14px; opacity: 0.6; padding-bottom: 20px;">Terry A. Davis, TempleOS creator.</p>
+                </div>
             </div>
         </div>
-
     </div>
 
-</body>
 
+    <input type="checkbox" id="resources-toggle" hidden>
+
+    <div class="modal-overlay">
+        <label for="resources-toggle" class="modal-backdrop"></label>
+
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header-text">
+                    <div> (・∀・) </div>
+                    <div> <i> Knowledge must be set free </i> </div>
+                    <h1>What's this?</h1>
+                </div>
+
+                <p>
+                    Basically, this page is reserved for subjects that I've learned throughout my uni so far.
+                    The plan is to create a quick summary about those materials, so myself (and others, perchance) can learn from it.
+                </p>
+
+                <p style="margin-top:10px;">
+                    For now, they're only linked to Proton Drive. I will probably make a Markdown wiki for them or something.
+                </p>
+
+                <div class="resources">
+
+                    <div class="section-title">1st Semester</div>
+                    <a href="https://drive.proton.me/urls/BMZJJHQW2R#pmYZYOYYTMMf" class="resource-card">
+                        <img src="./assets/icons/Code.png" class="subjects_icon"><br>
+                        Algorithm and Programming
+                    </a>
+                    <a href="https://drive.proton.me/urls/ZXHQGSPPK0#wcUlMGBHyOvL" class="resource-card">
+                        <img src="./assets/icons/Rows.png" class="subjects_icon"><br>
+                        Calculus 1
+                    </a>
+                    <a href="https://drive.proton.me/urls/VC219M2QNR#Kbmsxmz1tzsr" class="resource-card">
+                        <img src="./assets/icons/Path.png" class="subjects_icon"><br>
+                        Discrete Mathematics
+                      </a>
+                    <a href="https://drive.proton.me/urls/ZFFJTRE47C#XeMMxYSplWpi" class="resource-card">
+                        <img src="./assets/icons/Ruler.png" class="subjects_icon"><br>
+                        Physics 1
+                    </a>
+
+                    <div class="section-title">2nd Semester</div>
+                    <a href="https://drive.proton.me/urls/W13KX9V26C#wcpAbTbn1R5m" class="resource-card">
+                        <img src="./assets/icons/Rows.png" class="subjects_icon"><br>
+                        Calculus 2
+                    </a>
+                    <a href="https://drive.proton.me/urls/CS71F52DR4#WrGKvir0toKd" class="resource-card">
+                        <img src="./assets/icons/Clock.png" class="subjects_icon"><br>
+                        Complex Variables
+                    </a>
+                    <a href="https://drive.proton.me/urls/JH0FFB17TC#HrMqk5IDhDCw" class="resource-card">
+                        <img src="./assets/icons/Folder_Remove.png" class="subjects_icon"><br>
+                        Digital Engineering
+                    </a>
+                    <a href="https://drive.proton.me/urls/BM05Z939EM#wEQdclGXj9oq" class="resource-card">
+                        <img src="./assets/icons/Option.png" class="subjects_icon"><br>
+                        Electrical Circuits 1
+                    </a>
+                    <a href="https://drive.proton.me/urls/J1BPSXJGHG#wAz0ThOUVSdY" class="resource-card">
+                        <img src="./assets/icons/Loading.png" class="subjects_icon"><br>
+                        Linear Algebra
+                    </a>
+                    <a href="https://drive.proton.me/urls/GEQWMB18G8#FvyeJxAHFhs1" class="resource-card">
+                        <img src="./assets/icons/Ruler.png" class="subjects_icon"><br>
+                        Physics 2
+                    </a>
+
+                    <div class="section-title">3rd Semester and later</div>
+                    Too lazy zzz....
+
+                    <div class="section-title">Aero-robotic Lab</div>
+                    <a href="https://drive.proton.me/urls/XAGRH4XXT4#DR7RxCkv4lXC" class="resource-card">
+                        <img src="./assets/icons/Component.png" class="subjects_icon"><br>
+                        Components
+                    </a>
+                    <a href="https://drive.proton.me/urls/DW845M5SW8#Lnn3XUmKmp7G" class="resource-card">
+                        <img src="./assets/icons/Layers.png" class="subjects_icon"><br>
+                        Battery and Remote
+                    </a>
+                    <a href="https://drive.proton.me/urls/B6T9RNF03R#17QTEOZ80ncV" class="resource-card">
+                        <img src="./assets/icons/Monitor.png" class="subjects_icon"><br>
+                        Mission Planner
+                    </a>
+                    <a href="https://drive.proton.me/urls/Z3RWXBGBCC#cOJmFsJDgxIK" class="resource-card">
+                        <img src="./assets/icons/Settings.png" class="subjects_icon"><br>
+                        Plane Configuration
+                    </a>
+                    <a href="https://drive.proton.me/urls/QEVQM6MF4C#HYEipq7mhv1h" class="resource-card">
+                        <img src="./assets/icons/Window_Code_Block.png" class="subjects_icon"><br>
+                        EAGLE
+                    </a>
+                    <a href="https://drive.proton.me/urls/9S0N8CHERM#FfAG2YXV9xry" class="resource-card">
+                        <img src="./assets/icons/Compass.png" class="subjects_icon"><br>
+                        Multirotor
+                    </a>
+                    <a href="https://drive.proton.me/urls/12PAB4J104#R9gWs9b6AwiT" class="resource-card">
+                        <img src="./assets/icons/Wifi_High.png" class="subjects_icon"><br>
+                        Communication Protocol
+                    </a>
+
+                    <div class="section-title">LumiaTech Lab</div>
+                    <a href="https://github.com/petorikooru/LTI-Weekly-Meeting-Material" class="resource-card">
+                        <img src="./assets/icons/Window_Code_Block.png" class="subjects_icon"><br>
+                        Python and Stuff
+                    </a>
+
+                </div>
+
+                <label for="resources-toggle" class="close-btn">Close</label>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

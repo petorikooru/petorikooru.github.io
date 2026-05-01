@@ -1,3 +1,4 @@
 Credits :
-- https://coolicons.cool/
-- Comic Mono Font
+
+- <https://coolicons.cool/>
+- Comic Shanns Nerd Font
