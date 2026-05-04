@@ -11,8 +11,6 @@
     font-family: "ComicShanns Nerd Font", monospace, sans-serif;
     color: var(--color-foreground);
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     transition: var(--transition);
 }
 
@@ -118,13 +116,29 @@ body {
 
 .wrapper {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 40px;
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
+    
+    padding-left: max(20px, calc(50vw - 650px));
+    padding-right: 20px;
+    
+    position: relative;
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: max(20px, calc(50vw - 650px));
+
+    width: var(--sidebar-width);
+    max-height: calc(100vh - 40px);
+    z-index: 10;
 }
 
 .sidebar {
@@ -135,11 +149,6 @@ body {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     
     width: var(--sidebar-width);
-    flex-shrink: 0;
-    
-    position: sticky;
-    top: 50vh;
-    transform: translateY(-50%);
     
     padding: var(--default-padding);
     border-radius: var(--corner-radius);
@@ -223,7 +232,7 @@ body {
     justify-content: center;
     text-align: center;
 
-    padding: 18px 16px;
+    padding: 12px 16px;
 
     background: var(--color-card-glass);
     backdrop-filter: blur(8px);
@@ -251,6 +260,7 @@ body {
 .main_about {
     flex: 1;
     max-width: 900px;
+    margin-left: calc(var(--sidebar-width) + 40px);
 }
 
 .main_contents h1 {
@@ -295,7 +305,7 @@ section { margin-bottom: 50px; }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -303,7 +313,7 @@ section { margin-bottom: 50px; }
     background: var(--color-card-glass);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    padding: 25px;
+    padding: 10px 25px;
     border-radius: 16px;
     text-decoration: none;
     border: 1px solid rgba(255,255,255,0.08);
@@ -494,25 +504,35 @@ section { margin-bottom: 50px; }
 
 
 @media screen and (max-width: 920px) {
+    .sidebar {
+      width: auto;
+    }
+
     .wrapper {
         flex-direction: column;
         padding: 20px;
         gap: 20px;
     }
 
-    .sidebar {
+    .left-wrapper {
         position: static;
+        left: auto;
+        transform: none;
         width: 100%;
         max-height: none;
-        transform: none;
+    }
+
+    .main_about {
+        margin-left: 0;
     }
 
     .resources {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 800px) {
     .lab-item {
         flex-direction: column;
         align-items: flex-start;
